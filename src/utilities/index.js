@@ -12,13 +12,15 @@ export const connectWallet = async () => {
         } catch (error) {
             return {
                 connectedStatus: false,
-                status: "🦊 Connect to Metamask using the button on the top right."
+                status: "🦊 Connect to Metamask using the button on the top right.",
+                address: '',
             }
         }
     } else {
         return {
             connectedStatus: false,
-            status: "🦊 You must install Metamask into your browser: https://metamask.io/download.html"
+            status: "🦊 You must install Metamask into your browser: https://metamask.io/download.html",
+            address: '',
         }
     } 
 };
