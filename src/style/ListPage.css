@@ -1,0 +1,119 @@
+  .card {
+    width: 45%;
+  }
+  
+  .card img {
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    object-position: center;
+    cursor: pointer;
+  }
+  
+  hr {
+    width: 95%;
+    align-self: center;
+    border-top: 1px solid #181818;
+  }
+  
+  .card-desc {
+    font-size: 16px;
+    color: #181818;
+    text-align: justify;
+    padding: 0 1.5rem;
+  }
+  
+  .card-title {
+    font-size: 18px;
+    color: #181818;
+    font-weight: 600;
+    margin: .5rem 0;
+    padding: 0 1.5rem;
+  }
+  
+  .card-gallery {
+    width: 1140px;
+    background-color: #e3e3e3;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  
+  .loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid #3498db;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  @media screen and (min-width: 1024px) {
+    .card {
+      width: 45%;
+      height: 600px;
+      margin: 1.5rem .5rem;
+    }
+    .card img {
+      height: 300px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    .card {
+      width: 45%;
+      height: 600px;
+      margin: 1.5rem .5rem;
+    }
+    .card img {
+      height: 300px;
+    }
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 979px) {
+    .card {
+      width: 45%;
+      height: 600px;
+      margin: 1.5rem .5rem;
+    }
+    .card img {
+      height: 300px;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .card-gallery {
+      display: block;
+      width: 100%;
+    }
+    .card {
+      width: 100%;
+      margin: 1.5rem auto;
+    }
+    .card img {
+      height: 300px;
+    }
+  }
+  
+  @media screen and (max-device-width: 480px) {
+    .card-gallery {
+      display: block;
+      width: 100%;
+    }
+    .card {
+      width: 100%;
+      margin: 1.5rem auto;
+    }
+    .card img {
+      height: 300px;
+    }
+  }
+  
+  
